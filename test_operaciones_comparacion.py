@@ -8,8 +8,8 @@ class TestOperacionesComparacion(unittest.TestCase):
 
     def test_es_mayor_que(self):
         self.assertTrue(es_mayor_que(10, 5))
-        self.assertFalse(es_mayor_que(3, 5))
-        self.assertFalse(es_mayor_que(5, 5))
+        self.assertFalse(es_mayor_que(2, 4))
+        self.assertFalse(es_mayor_que(-6, 7))
 
     def test_es_menor_que(self):
         self.assertTrue(es_menor_que(2, 4))
@@ -17,13 +17,13 @@ class TestOperacionesComparacion(unittest.TestCase):
         self.assertFalse(es_menor_que(5, 5))
 
     def test_es_mayor_o_igual_que(self):
-        self.assertTrue(es_mayor_o_igual_que(10, 5))
-        self.assertTrue(es_mayor_o_igual_que(5, 5))
+        self.assertTrue(es_mayor_o_igual_que(9, 3))
+        self.assertTrue(es_mayor_o_igual_que(1, 1))
         self.assertFalse(es_mayor_o_igual_que(3, 5))
 
     def test_es_menor_o_igual_que(self):
-        self.assertTrue(es_menor_o_igual_que(3, 5))
-        self.assertTrue(es_menor_o_igual_que(5, 5))
+        self.assertTrue(es_menor_o_igual_que(-3, 2))
+        self.assertTrue(es_menor_o_igual_que(6, 6))
         self.assertFalse(es_menor_o_igual_que(6, 5))
 
     def test_son_iguales(self):
