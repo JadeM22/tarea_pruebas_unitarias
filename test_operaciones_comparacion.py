@@ -7,19 +7,16 @@ from operaciones_comparacion import es_mayor_que, es_menor_que, es_mayor_o_igual
 class TestOperacionesComparacion(unittest.TestCase):
 
     def test_es_mayor_que(self):
-        self.assertGreater(es_mayor_que(4, 2), True)
         self.assertTrue(es_mayor_que(10, 5))
         self.assertFalse(es_mayor_que(2, 4))
         self.assertFalse(es_mayor_que(-6, 7))
 
     def test_es_menor_que(self):
-        self.assertLess(es_menor_que(2, 7), True)
         self.assertTrue(es_menor_que(2, 4))
         self.assertFalse(es_menor_que(5, 2))
         self.assertFalse(es_menor_que(5, 5))
 
     def test_es_mayor_o_igual_que(self):
-        self.assertGreaterEqual(es_mayor_o_igual_que(7, 7), True)
         self.assertTrue(es_mayor_o_igual_que(9, 3))
         self.assertTrue(es_mayor_o_igual_que(1, 1))
         self.assertFalse(es_mayor_o_igual_que(3, 5))
