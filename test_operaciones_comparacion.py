@@ -1,10 +1,8 @@
 # test_operaciones_comparacion.py
 
 import unittest
-from operaciones_comparacion import (
-    es_mayor_que, es_menor_que, es_mayor_o_igual_que,
-    es_menor_o_igual_que, son_iguales
-)
+from operaciones_comparacion import es_mayor_que, es_menor_que, es_mayor_o_igual_que, es_menor_o_igual_que, son_iguales
+
 
 class TestOperacionesComparacion(unittest.TestCase):
 
